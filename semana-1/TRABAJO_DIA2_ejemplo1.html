@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <title>Ejemplo 1</title>
+    <script src="funciones2.js"></script>
+</head>
+
+<body>
+
+    <p id="promedio"></p>
+    <p id="estado"></p>
+
+    <script>
+        const notas = [14, 16, 12, 18];
+
+        const promedio = calcularPromedio(notas);
+
+        document.getElementById("promedio").innerText =
+            "Promedio: " + promedio.toFixed(2);
+
+        document.getElementById("estado").innerText =
+            "Estado: " + estadoalumno(promedio);
+    </script>
+
+</body>
+</html>

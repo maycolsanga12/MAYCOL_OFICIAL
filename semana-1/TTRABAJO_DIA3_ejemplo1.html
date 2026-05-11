@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sistema de notas</title>
+    <script src="funciones2.js"></script>
+</head>
+
+<body>
+
+    <p id="resultado"></p>
+
+    <script>
+        const promedio = calcularPromedio(15, 18, 14);
+
+        const condicion = obtenerCondicion(promedio);
+
+        const mensaje = mensajeFinal("Maycol", promedio, condicion);
+
+        document.getElementById("resultado").innerText = mensaje;
+    </script>
+
+</body>
+</html>

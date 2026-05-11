@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ejemplo avanzado 3</title>
+    <script src="funciones1.js"></script>
+</head>
+<body>
+
+    <textarea id="texto" rows="5" cols="40"></textarea>
+    <br>
+
+    <button onclick="procesarTexto()">Contar palabras</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function procesarTexto() {
+            const texto = document.getElementById("texto").value;
+
+            document.getElementById("resultado").innerText =
+                "Cantidad de palabras: " + contarPalabras(texto);
+        }
+    </script>
+
+</body>
+</html>

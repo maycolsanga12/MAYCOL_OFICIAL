@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculadora de compra</title>
+    <script src="funciones1.js"></script>
+</head>
+<body>
+    <p id="sub"></p>
+    <p id="desc"></p>
+    <p id="total"></p>
+    <script>
+        const precio=25;
+        const cantidad=5;
+        const sub=subtotal(precio,cantidad);
+        const desc=descuento(sub);
+        const total=totalPagar(precio,cantidad);
+        document.getElementById("sub").innerText="Subtotal: "+sub;
+        document.getElementById("desc").innerText="Descuento: "+desc; 
+        document.getElementById("total").innerText="Total a pagar: "+total;
+    </script>
+</body>
+</html>

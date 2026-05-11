@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <title>Ejemplo Validacion</title>
+    <script src="funciones1.js"></script>
+</head>
+
+<body>
+
+    <input type="text" id="nombre" placeholder="nombre">
+    <input type="email" id="correo" placeholder="correo">
+
+    <button onclick="validarFormulario()">Validar</button>
+
+    <p id="salida"></p>
+
+    <script>
+        function validarFormulario() {
+            const nombre = document.getElementById("nombre").value;
+            const correo = document.getElementById("correo").value;
+
+            if (!validarcorreo(correo)) {
+                document.getElementById("salida").innerText =
+                    "El correo no es válido.";
+                return;
+            }
+
+            document.getElementById("salida").innerText =
+                "Datos correctos";
+        }
+    </script>
+
+</body>
+</html>
